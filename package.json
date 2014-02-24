@@ -1,0 +1,36 @@
+{
+    "name": "redis-hashring",
+    "version": "0.0.0",
+    "description": "redis-hashring ==========",
+    "main": "lib/redis_hashring",
+    "dependencies": {
+        "hiredis": "~0.1.16",
+        "redis": "~0.10.1",
+        "install": "~0.1.7",
+        "bignumber": "~1.1.0"
+    },
+    "contributors": [
+        {
+            "name": "Pablo Cabrera",
+            "email": "pablo.cabrera.munoz@gmail.com"
+        },
+        {
+            "name": "Thiago Caiubi",
+            "email": "thiago.caiubi@gmail.com"
+        }
+    ],
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chaordic/redis-hashring.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/chaordic/redis-hashring/issues"
+    },
+    "homepage": "https://github.com/chaordic/redis-hashring"
+}
