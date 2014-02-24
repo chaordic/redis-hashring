@@ -1,7 +1,7 @@
 {
     "name": "redis-hashring",
-    "version": "0.0.0",
-    "description": "redis-hashring ==========",
+    "version": "0.0.1",
+    "description": "This project allows you to create an Redis cluster. It uses the key passed on parameters to generate a hash to decide in which instance it should read or write the data",
     "main": "lib/redis_hashring",
     "dependencies": {
         "hiredis": "~0.1.16",
