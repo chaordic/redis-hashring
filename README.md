@@ -8,24 +8,24 @@ This project allows you to create an Redis cluster. It uses the key passed on pa
 Quick example using two Redis instances:
 
 ```js
-var RedisRing = require("");
+var RedisHashring = require("../lib/redis_hashring");
 
-var redisRing = new RedisRing();
+var redisHashring = new RedisHashring();
 
-redisRing.initialize(["localhost", "localhost:7777"]);
+redisHashring.initialize(["localhost", "localhost:7777"]);
 
-redisRing.ready(function() {
+redisHashring.ready(function() {
     var key = "somekey",
         key2 = "otherkey";
 
-    redisRing.set(key, "Value", function(err, val) {
-        redisRing.get(key, function(err, val) {
+    redisHashring.set(key, "Value", function(err, val) {
+        redisHashring.get(key, function(err, val) {
             console.log(err, val);
         })
     });
 
-    redisRing.set(key2, "Value2", function(err, val) {
-        redisRing.get(key2, function(err, val) {
+    redisHashring.set(key2, "Value2", function(err, val) {
+        redisHashring.get(key2, function(err, val) {
             console.log(err, val);
         })
     });
