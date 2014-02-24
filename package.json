@@ -27,7 +27,10 @@
         "type": "git",
         "url": "git://github.com/chaordic/redis-hashring.git"
     },
-    "author": "",
+    "author": {
+        "name": "Pablo Cabrera",
+        "email": "pablo.cabrera.munoz@gmail.com"
+    },
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/chaordic/redis-hashring/issues"
