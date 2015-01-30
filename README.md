@@ -5,6 +5,8 @@ This project allows you to create an Redis cluster used for caching purposes. It
 
 This project works best for very large applications with tons of small cache keys. It is basicaly a tool to shard values into many redis machines dividing load. It is not intended for applications that require huge reads of a small ammount of keys since that would put strain into a single machine.
 
+It does have support for disaster recovery, if a machine is considered down redis-hashring will remove it from the ring and send the keys to other machines until that machine is back on again granting some safety for high availability.
+
 ## Usage
 
 Quick example using two Redis instances:
