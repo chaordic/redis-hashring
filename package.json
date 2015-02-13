@@ -4,10 +4,11 @@
     "description": "This project allows you to create an Redis cluster. It uses the key passed on parameters to generate a hash to decide in which instance it should read or write the data",
     "main": "lib/redis_hashring",
     "dependencies": {
-        "hiredis": "~0.1.16",
-        "redis": "~0.10.1",
-        "install": "~0.1.7",
-        "bignumber": "~1.1.0"
+        "bignumber": "^1.1.0",
+        "bluebird": "^2.9.6",
+        "hiredis": "^0.1.17",
+        "install": "^0.1.8",
+        "redis": "^0.12.1"
     },
     "contributors": [
         {
