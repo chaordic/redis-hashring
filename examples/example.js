@@ -1,25 +1,25 @@
-var Annulus = require("../lib");
+var RedisRing = require("../lib");
 
-var annulus = new Annulus([
+var redisRing = new RedisRing([
     {host: "localhost", port: "6379"},
     {host: "localhost", port: "7777"}
 ]);
 
-annulus.set("a", "b").
+redisRing.set("a", "b").
     then(function(value) {
         console.log("resolve", value);
     }, function(reason) {
         console.log("reject", reason);
     });
 
-annulus.set("x", "y").
+redisRing.set("x", "y").
     then(function(value) {
         console.log("resolve", value);
     }, function(reason) {
         console.log("reject", reason);
     });
 
-annulus.hincrby("ctr", "impressions", 1).
+redisRing.hincrby("ctr", "impressions", 1).
     then(function(value) {
         console.log("resolve", value);
     }, function(reason) {
